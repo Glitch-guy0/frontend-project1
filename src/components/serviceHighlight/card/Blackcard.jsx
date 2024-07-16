@@ -10,7 +10,7 @@ import { BsArrowUpRightCircleFill } from "react-icons/bs";
 
 export default function Blackcard(props){
     return(
-        <div name='card' className=" bg-slate-950 flex h-[45vh] w-[40vw] rounded-[30px] overflow-hidden p-6  border-b-[6px] border-black border-2 *:text-white" >
+        <div name='card' className=" bg-slate-950 flex justify-between h-[45vh] w-[40vw] rounded-[30px] overflow-hidden p-6  border-b-[6px] border-black border-2 *:text-white" >
                 <div className="flex flex-col items-start justify-between w-1/2">
                     <p className="*:rounded *:px-2  *:text-4xl *:font-bold *:bg-white *:text-black leading-[5vh] w-full">
                         <div className="">{props.title1}</div> <div className="w-fit">{props.title2}</div>

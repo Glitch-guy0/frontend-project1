@@ -1,4 +1,6 @@
+import { useGSAP } from "@gsap/react"
 import logo from "/images/logo.png"
+import gsap from "gsap"
 
 
 
@@ -6,9 +8,23 @@ import logo from "/images/logo.png"
 
 
 export default function Navbar(){
+
+    useGSAP(()=>{
+        gsap.from("nav *",{
+            y: -100,
+            opacity: 50,
+            stagger: 0.1,
+            delay: 0.3,
+            duration: 0.5
+        });
+
+        
+    })
+    
+    
     return(
         <nav  className=" w-full py-8 h-14 flex items-center justify-between">
-                <img src={logo}  className=" h-8 bg-red-800"/>
+                <img src={logo}  className=" h-8"/>
             <div id="routes" className="text-black text-md flex gap-4 items-center text-base">
                 <a>About us</a>
                 <a>Services</a>
