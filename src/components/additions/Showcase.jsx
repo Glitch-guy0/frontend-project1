@@ -22,9 +22,9 @@ export default function Showcase(){
             scrollTrigger:{
                 trigger: "#showcase",
                 scroller: "body",
-                start: 'top 80%',
-                end: 'top 50%',
-                scrub: 1
+                start: 'top 70%',
+                end: 'top 35%',
+                scrub: 1,
 
             }
         })
